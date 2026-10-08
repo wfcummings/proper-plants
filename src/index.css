@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 30ch;
+  gap: 1rem;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+button {
+  align-self: center;
+  padding: 0.5rem;
+  width: 150%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  border: 1px black solid;
+  padding: 5ch;
+  display: flex;
+  flex-direction: column;
+  gap: 3ch;
+}
+
+.plant figure {
+  font-size: 5rem;
+  text-align: center;
+}
