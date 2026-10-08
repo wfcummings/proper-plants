@@ -18,31 +18,32 @@ html {
   font-family: sans-serif;
 }
 
-button {
-  align-self: center;
-  padding: 0.5rem;
-  width: 150%;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+.plants ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20ch, 1fr));
+  gap: 1.25ch;
 }
 
 li {
-  border: 1px black solid;
-  padding: 5ch;
+  border: 1px rgb(189, 186, 186) solid;
+  padding: 1.5ch;
   display: flex;
   flex-direction: column;
-  gap: 3ch;
+  gap: 2ch;
+  font-weight: bolder;
 }
 
 .plant figure {
   font-size: 5rem;
   text-align: center;
+}
+
+button {
+  align-self: center;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
 }
