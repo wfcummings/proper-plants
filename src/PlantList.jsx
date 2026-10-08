@@ -6,7 +6,7 @@ export default function PlantList() {
   const [plants] = useState(PLANTS);
 
   return (
-    <section className="plants-list">
+    <section className="plants">
       <h2>Plants</h2>
       <ul>
         {plants.map((plant) => (
