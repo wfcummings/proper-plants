@@ -5,7 +5,7 @@ import PLANTS from "./data";
 
 export default function App() {
   const [items, setItems] = useState([]);
-  const addToCart = () => {
+  const addToCart = (PlantList) => {
     const existingItem = items.find((item) => item.id === PlantList.id);
     if (existingItem) {
       setItems(
@@ -38,9 +38,9 @@ export default function App() {
       <main>
         <PlantList PlantList={PLANTS} addToCart={addToCart} />
         <CartList
-          CartList={CartList}
-          removeFromCart={removeFromCart}
+          items={items}
           addToCart={addToCart}
+          removeFromCart={removeFromCart}
         />
       </main>
     </>
