@@ -1,4 +1,4 @@
-export default function CartList() {
+export default function CartList({ items, addToCart, removeFromCart }) {
   return (
     <section>
       <h2>Cart</h2>
