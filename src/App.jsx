@@ -5,7 +5,9 @@ export default function App() {
   return (
     <>
       <h1>Proper Plants</h1>
-      <PlantList />
+      <main>
+        <PlantList />
+      </main>
     </>
   );
 }
