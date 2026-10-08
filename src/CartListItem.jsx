@@ -1,11 +1,12 @@
 export default function CartListItem({ item, addToCart, removeFromCart }) {
   return (
-    <li>
-      <p>{item.image}</p>
-      <p>{item.name}</p>
+    <li className="cart-item">
       <div>
+        {item.image} {item.name}
+      </div>
+      <div className="cart-item-quantity">
         <button onClick={() => removeFromCart(item)}>-</button>
-        <p>{item.quantity}</p>
+        <span>{item.quantity}</span>
         <button onClick={() => addToCart(item)}>+</button>
       </div>
     </li>
